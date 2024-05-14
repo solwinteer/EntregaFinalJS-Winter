@@ -1,0 +1,70 @@
+.carrito-compras {
+    margin-left: 24px;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 36px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.card-img-top {
+    width: 250px;
+    margin: auto;
+    display: block;
+}
+
+.btn.btn-primary {
+    margin-left: 30px;
+}
+
+.card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.carrito-compras-container span {
+    position: relative;
+    left: -51px;
+    top: 19px;
+    color: orange;
+}
+
+.carro-compras-productos {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+
+.carro-compras-productos a {
+    text-decoration: none;
+}
+
+
+.carro-compras {
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    min-height: 200px;
+    right: 20px;
+    top: 55px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+    visibility: hidden;
+    padding: 10px;
+}
+
+.carro-compras-productos div {
+    padding: 5px;
+}
+
+.carro-compras-total {
+    position: absolute;
+    bottom: 0;
+}
