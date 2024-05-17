@@ -39,6 +39,7 @@ function agregarProductoAlCarrito(producto) {
 
     updateCarrito();
     updateListaCarrito();
+    actualizarStorage();
 }
 
 // resta un producto al carrito de compras
@@ -55,8 +56,17 @@ function restarProductoAlCarrito(producto) {
 
     updateCarrito();
     updateListaCarrito();
+    actualizarStorage();
 }
 
+function actualizarStorage() {
+    if (!carritoCompras || carritoCompras.length == 0) {
+        localStorage.setItem(CARRITO_COMPRAS_KEY, null);
+    }
+    else {
+        localStorage.setItem(CARRITO_COMPRAS_KEY, JSON.stringify(carritoCompras));
+    }
+}
 
 function updateCarrito() {
     let cantidad = 0;
@@ -197,4 +207,14 @@ function restarAlCarrito(id) {
     restarProductoAlCarrito(producto);
 }
 
+// carga el carrito de compras del storage y lo actualiza
+function cargarCarritoCompras() {
+    var carritoStorage = localStorage.getItem(CARRITO_COMPRAS_KEY);
+    if (carritoStorage || carritoStorage?.length > 0) {
+        carritoCompras = JSON.parse(carritoStorage);
+        updateCarrito();
+    }
+}
+
 crearCardsProductos();
+cargarCarritoCompras();

@@ -5,4 +5,6 @@ const TIPO_PRODUCTO = {
     Higiene: "HIGIENE"
 }
 
-const NO_APLICA = "N/A"
+const NO_APLICA = "N/A";
+
+const CARRITO_COMPRAS_KEY = "carritoCompras";
