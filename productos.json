@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "nombre": "Satiety",
+        "descripcion": "Alimento balanceado para gato regulador de peso.",
+        "marca": "Royal Cannin",
+        "precio": 30,
+        "tipoProducto": "Comida",
+        "urlImagen": "https://cdn.royalcanin-weshare-online.io/Ij93eoYBRYZmsWpcS_N5/v9/ar-l-satiety-feline-seco-vhn-01"
+    },
+    {
+        "id": 2,
+        "nombre": "Light",
+        "descripcion": "Alimento balanceado para gato regulador de peso.",
+        "marca": "Royal Cannin",
+        "precio": 25,
+        "tipoProducto": "Comida",
+        "urlImagen": "https://traviesospetshop.com.ar/wp-content/uploads/2023/01/light-gato-para-pagi-web.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Indoor",
+        "descripcion": "Alimento balanceado para gato de interior.",
+        "marca": "Royal Cannin",
+        "precio": 20,
+        "tipoProducto": "Comida",
+        "urlImagen": "https://cdn.royalcanin-weshare-online.io/8j-CLIYBRYZmsWpcGfF-/v13/ar-l-indoor-seco-fhn-01"
+    },
+    {
+        "id": 4,
+        "nombre": "Mini Adulto",
+        "descripcion": "Alimento balanceado para perro de tamaño chico.",
+        "marca": "Royal Cannin",
+        "precio": 22,
+        "tipoProducto": "Comida",
+        "urlImagen": "https://catycanar.vtexassets.com/arquivos/ids/155397/47.jpg?v=637637870051770000"
+    },
+    {
+        "id": 5,
+        "nombre": "Digestive",
+        "descripcion": "Alimento balanceado de facil digestión para perro de tamaño mediano.",
+        "marca": "Royal Cannin",
+        "precio": 28,
+        "tipoProducto": "Comida",
+        "urlImagen": "https://faunatown.com.ar/wp-content/uploads/2021/07/FT-E-commerce.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Hueso",
+        "descripcion": "Hueso de cuero de vaca comestible.",
+        "marca": "NO_APLICA",
+        "precio": 5,
+        "tipoProducto": "Juguete",
+        "urlImagen": "https://www.mivetshop.com.ar/media/catalog/product/cache/f45fac214c5ee5bb0b2a50e4e7188992/6/5/654561_mesa_de_trabajo_1_3.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Caña",
+        "descripcion": "Caña de juguete con forma de rata para gato.",
+        "marca": "NO_APLICA",
+        "precio": 3,
+        "tipoProducto": "Juguete",
+        "urlImagen": "https://http2.mlstatic.com/D_NQ_NP_718219-MLU70707492873_072023-O.webp"
+    },
+    {
+        "id": 8,
+        "nombre": "Pelota",
+        "descripcion": "Pelota de tenis.",
+        "marca": "NO_APLICA",
+        "precio": 4,
+        "tipoProducto": "Juguete",
+        "urlImagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYWSNj9Oi3SKc1XnyaTckTOjdc3ZowU5me4njH-JgnSg&s"
+    },
+    {
+        "id": 9,
+        "nombre": "Piedritas sanitarias",
+        "descripcion": "Piedras sanitarias para gato de 1.5kg",
+        "marca": "Pichichos",
+        "precio": 3.5,
+        "tipoProducto": "Higiene",
+        "urlImagen": "https://faunatown.com.ar/wp-content/uploads/2022/11/Productos-Web.png"
+    },
+    {
+        "id": 10,
+        "nombre": "Piedritas sanitarias",
+        "descripcion": "Piedras aglomerantes sanitarias para gato de 4kg",
+        "marca": "Michis",
+        "precio": 7,
+        "tipoProducto": "Higiene",
+        "urlImagen": "https://herspet.com/wp-content/uploads/2020/10/piedras-sanitarias-michi-feliz-10bolsas-de-18-kg-D_NQ_NP_764948-MLA41577055605_042020-F.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Shampoo para perro",
+        "descripcion": "Shampoo para perro de 200ml hipoalergénico",
+        "marca": "Mis perritos",
+        "precio": 6,
+        "tipoProducto": "Higiene",
+        "urlImagen": "https://acdn.mitiendanube.com/stores/001/151/906/products/osspretpgp1-196570682675c509c716690723431774-640-0.jpeg"
+    }
+]
