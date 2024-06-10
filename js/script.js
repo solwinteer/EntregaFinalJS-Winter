@@ -25,6 +25,7 @@ function agregarProductoAlCarrito(producto) {
 
     updateCarrito();
     updateListaCarrito();
+    guardarCarritoEnLocalStorage();
 
     Toastify({
         text: producto.nombre + " agregado al carrito",
@@ -51,6 +52,7 @@ function restarProductoAlCarrito(producto) {
 
     updateCarrito();
     updateListaCarrito();
+    guardarCarritoEnLocalStorage();
 }
 
 function vaciarCarritoCompras() {
@@ -226,10 +228,26 @@ function cargarProductos() {
         });
 }
 
+// Función para guardar el carrito en el localStorage
+function guardarCarritoEnLocalStorage() {
+    localStorage.setItem('carritoCompras', JSON.stringify(carritoCompras));
+}
+
+// Función para cargar el carrito del localStorage al cargar la página
+function cargarCarritoDesdeLocalStorage() {
+    const carritoGuardado = localStorage.getItem('carritoCompras');
+    if (carritoGuardado) {
+        carritoCompras = JSON.parse(carritoGuardado);
+        updateCarrito();
+        updateListaCarrito();
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     var fechaVencimientoInput = document.getElementById('fechaVencimiento');
     var inputmask = new Inputmask('99/99');
     inputmask.mask(fechaVencimientoInput);
+    cargarCarritoDesdeLocalStorage();
 });
 
 document.getElementById('btnComprar').addEventListener('click', function () {
@@ -258,6 +276,7 @@ document.getElementById('btnComprar').addEventListener('click', function () {
 
           mostrarCarritoCompras(true);
           vaciarCarritoCompras();
+          localStorage.removeItem('carritoCompras');
     }, 2000);
 });
 
